@@ -1,4 +1,4 @@
-package org.brazona.domain;
+package org.brazona.domain.dto;
 
 public class MovieDTO {
 

@@ -63,6 +63,19 @@
             <version>3.31.2</version>
             <scope>compile</scope>
         </dependency>
+
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-rest-jsonb</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-rest-client-jsonb</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-rest-client</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

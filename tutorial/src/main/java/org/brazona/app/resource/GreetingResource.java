@@ -1,4 +1,4 @@
-package org.brazona;
+package org.brazona.app.resource;
 
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
@@ -13,11 +13,4 @@ public class GreetingResource {
     public String hello() {
         return "Hello from Quarkus REST";
     }
-
-    @GET
-    @Produces(MediaType.APPLICATION_JSON)
-    public String get(){
-        return "Hello Cezar2";
-    }
-
 }

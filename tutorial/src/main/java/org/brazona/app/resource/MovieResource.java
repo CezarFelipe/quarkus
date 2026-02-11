@@ -1,9 +1,9 @@
-package org.brazona.app;
+package org.brazona.app.resource;
 
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
-import org.brazona.domain.MovieDTO;
+import org.brazona.domain.dto.MovieDTO;
 
 import java.util.ArrayList;
 import java.util.List;
