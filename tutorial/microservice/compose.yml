@@ -1,0 +1,34 @@
+services:
+  db:
+    container_name: pgsql-db
+    hostname: pgsql-db
+    image: postgres:12-alpine
+    networks:
+      - bzn-network
+    restart: unless-stopped
+    extra_hosts:
+    - "host.docker.internal:host-gateway"  
+    environment:
+      - POSTGRES_USER=quarkus
+      - POSTGRES_PASSWORD=quarkus
+      - POSTGRES_DB=tutorial
+    ports:
+      - "5440:5432"
+    volumes:
+      - vol-db-quarkus:/var/lib/postgresql/data
+  adminer:
+    image: adminer
+    networks:
+      - bzn-network
+    restart: unless-stopped
+    extra_hosts:
+    - "host.docker.internal:host-gateway"  
+    depends_on:
+      - db
+    ports:
+      - 8383:8080    
+networks:
+  bzn-network:
+    external: true
+volumes:
+  vol-db-quarkus: {}  
