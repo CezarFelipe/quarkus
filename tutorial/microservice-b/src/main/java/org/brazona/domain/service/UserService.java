@@ -45,7 +45,7 @@ public class UserService {
             System.out.println("User"+converterParaJson(userDTO));
             return userDTO;
         } catch (Exception e) {
-            System.out.println("Exception "+ e.getLocalizedMessage());
+            System.out.println("Exception: "+ e.getLocalizedMessage());
             return null;
         }
 

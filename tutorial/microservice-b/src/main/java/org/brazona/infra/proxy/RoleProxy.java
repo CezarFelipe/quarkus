@@ -15,7 +15,7 @@ import java.util.List;
 
 @Path("/role")
 @Produces(MediaType.APPLICATION_JSON)
-@RegisterRestClient(baseUri = "http://localhost:8081")
+@RegisterRestClient(baseUri = "https://localhost:8443", configKey = "microservice_")
 @ApplicationScoped
 public interface RoleProxy {
 
