@@ -11,7 +11,7 @@ import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
 
 @Path("/address")
 @Produces(MediaType.APPLICATION_JSON)
-@RegisterRestClient(baseUri = "http://localhost:8082")
+@RegisterRestClient(baseUri = "https://localhost:8445", configKey = "microservice_d")
 @ApplicationScoped
 public interface AddressProxy {
 
